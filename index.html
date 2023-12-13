@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote</title>
+    <link rel="icon" href="imgs/favicon.ico" sizes="16x16" />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="quote-card">
+      <svg width="279" height="397" viewBox="0 0 279 397" fill="none">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M84 0C37.6081 0 3.56043e-07 37.6081 3.56043e-07 84V240C3.56043e-07 244.418 3.58172 248 8 248H103.071C101.269 249.795 99.485 251.55 97.719 253.254C85.2614 265.274 68.1066 276.433 44.8836 285.32C15.7323 296.477 -5.19959 325.218 1.13586 355.782C6.25218 380.464 27.5718 398.847 52.6576 396.378C132.112 388.559 239.245 350.653 274.687 243.912C275.844 240.429 276.606 236.982 277.006 233.593C278.289 230.655 279 227.411 279 224V8C279 3.58172 275.418 0 271 0H84Z"
+          fill="#3F4346"
+        />
+      </svg>
+
+      <div class="profile-img">
+        <img id="profileImg" src="imgs/user-solid.svg" alt="" />
+      </div>
+      <h5 id="quoteAuthor"></h5>
+      <p id="quotePara">
+        “Press the <i class="fa-solid fa-repeat"></i> below to recieve a random
+        quote!”
+      </p>
+
+      <button id="changeBtn"><i class="fa-solid fa-repeat"></i></button>
+      <button id="goldBtn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+    <div id="messageCard">
+      <div class="title">
+        <h2>Message for You</h2>
+        <i class="fa-solid fa-heart"></i>
+      </div>
+      <p>
+        Whatever the result. No one tries and gets zero. Your attempt will
+        reduce the burden on you next time and you will not be starting from
+        scratch
+      </p>
+      <button id="messageBtn">Thank U</button>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

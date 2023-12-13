@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 1s;
+}
+
+body {
+  background-color: #313146;
+}
+img {
+  width: 100%;
+}
+
+.quote-card {
+  margin: 100px auto;
+  width: fit-content;
+  position: relative;
+}
+
+.quote-card svg {
+  filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.5));
+}
+
+.quote-card .profile-img {
+  border: 5px solid #35bdbb;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translate(-50%, 50%);
+}
+
+.quote-card #quoteAuthor {
+  width: 100%;
+  padding: 0 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 60px;
+  color: #35bdbb;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.quote-card #quotePara {
+  width: 100%;
+  padding: 0 10px;
+  position: absolute;
+  left: 50%;
+  top: 121px;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+}
+
+.quote-card button {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+}
+
+.quote-card #changeBtn {
+  padding: 10px;
+  border: none;
+  background-color: #35bdbb;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 98.6px;
+}
+
+.quote-card #changeBtn:hover i {
+  transform: rotate(720deg);
+}
+
+.quote-card #goldBtn {
+  padding: 10px;
+  border: 7px solid #35bdbb;
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.quote-card button i {
+  font-size: 50px;
+  color: #fff;
+}
+
+.quote-card #goldBtn:hover {
+  background-image: linear-gradient(
+    180deg,
+    #fc0 0%,
+    #996515 42.71%,
+    #b8860b 74.69%,
+    #d4af37 100%
+  );
+  padding: 10px;
+  border: none;
+}
+
+#messageCard {
+  background-image: linear-gradient(
+    180deg,
+    #fc0 0%,
+    #996515 42.71%,
+    #b8860b 74.69%,
+    #d4af37 100%
+  );
+  filter: drop-shadow(0px 10px 30px rgb(0, 0, 0));
+  color: #fff;
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-family: Inter;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-80%, -10%) scale(0);
+  opacity: 0;
+}
+
+#messageCard .title {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #313146;
+}
+
+#messageCard p {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+#messageCard button {
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #313146;
+  color: #fff;
+  cursor: pointer;
+}
+
+#messageCard button:hover {
+  background-color: #fff;
+  color: #313146;
+}
