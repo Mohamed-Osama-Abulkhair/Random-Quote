@@ -43,33 +43,19 @@ let rand,
   randoms = [],
   lastRand;
 
-function generateRandom() {
-  rand = Math.round(Math.random() * (quotes.length - 1));
-  if (rand == lastRand) {
-    generateRandom();
-  } else {
-    displayData(rand);
-    console.log(`number of random Quote is ${rand + 1}`);
-    randoms.push(rand);
-  }
-}
-
 let addQuote = () => {
-  rand = Math.round(Math.random() * (quotes.length - 1));
-  if (randoms.length > 0) {
-    lastRand = randoms.pop();
-    if (rand == lastRand) {
-      generateRandom();
-    } else {
-      displayData(rand);
-      console.log(`number of random Quote is ${rand + 1}`);
-      randoms.push(rand);
-    }
-  } else {
-    displayData(rand);
-    console.log(`number of random Quote is ${rand + 1}`);
-    randoms.push(rand);
+  if (quotes.length == randoms.length) {
+    randoms = [];
   }
+
+  do {
+    rand = Math.round(Math.random() * (quotes.length - 1));
+  } while (lastRand == rand || randoms.includes(rand));
+  
+  console.log(`number of random Quote is ${rand + 1}`);
+  randoms.push(rand);
+  lastRand = rand;
+  displayData(rand);
 };
 
 changeBtn.addEventListener("click", addQuote);
